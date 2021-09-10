@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./_css/style-global.css">
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons+Round" rel="stylesheet">
+    <link rel="shortcut icon" href="./_assets/favicon.ico" type="image/x-icon">
+    <title>CIVA - Painel Unidade</title>
+</head>
+
+<body id="container-manager">
+
+    <div id="container-menu">
+        <!-- PERFIL USUARIO -->
+        <div class="profile-info">
+            <div class="photo-profile">
+                <img src="" alt="foto perfil">
+            </div>
+            <p class="name-user">Nome Sobrenome</p>
+            <p>Cargo</p>
+        </div>
+
+        <!-- NAVEGAÇÃO ENTRE PAGINAS -->
+        <nav class="menu-sidebar">
+            <ul>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="./ui-043.html" class="btn"><span class="material-icons-round">people_alt</span>Gerenciar
+                        usuário</a>
+                </li>
+                <li class="item-menu active-item-menu"><i></i><i></i>
+                    <a href="./ui-049.html"><span class="material-icons-round">place</span>Gerenciar unidade</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="./ui-051.html"><span class="material-icons-round">contact_page</span>Gerenciar
+                        vacinação</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="./ui-053.html"><span class="material-icons-round">assessment</span>Painel relatório</a>
+                </li>
+                <li class="item-menu"><i></i><i></i>
+                    <a href="./ui-054.html"><span class="material-icons-round">account_circle</span>Perfil</a>
+                </li>
+            </ul>
+        </nav>
+
+        <!-- RODAPÉ MENU -->
+        <div class="container-rodape-menu"><a href="" class=""><img src="./_assets/icon-civa-footer.svg" alt="">F.A.
+                &#169 2021</a></div>
+    </div>
+    </div>
+
+    <div id="container-main">
+
+        <div id="wrapper-main">
+
+            <header class="container-header">
+                <h3>Painel Unidade</h3>
+            </header>
+
+            <div class="container-middle">
+
+                <!-- CONTAINER BOX'S -->
+                <div class="box-container">
+                    <!-- CONTAINER BOX LEFT FORM -->
+                    <div class="box-wrapper">
+                        <!-- CONTAINER CABEÇALHO -->
+                        <header class="box-header">Dados Unidade
+                        </header>
+                        <!-- CONTAINER DO MEIO -->
+                        <form class="box-middle box-middle-form scroll-default" id="form-panel-supervisor">
+
+                            <div class="input-container">
+                                <label for="nome">Nome</label>
+                                <input type="text" name="nome" value="Hospital Pan" class="input-default" id="nome">
+                            </div>
+                            <div class="input-container">
+                                <label for="idu">ID unidade</label>
+                                <input type="text" name="ID unidade" value="123456789" class="input-default" id="idu"
+                                    disabled>
+                            </div>
+                            <div class="input-container">
+                                <label for="subdivisao1">Subdivisão 1</label>
+                                <div class="select-default">
+                                    <select required name="Subdivisão 1" id="subdivisao1">
+                                        <option value="" selected disabled>Selecionar</option>
+                                        <option value="1" selected>Rio de Janeiro</option>
+                                        <option value="2">São Paulo</option>
+                                        <option value="3">Minas Gerais</option>
+                                        <option value="4">Espírito Santo</option>
+                                        <option value="5">Mato Grosso</option>
+                                    </select>
+                                    <span class="material-icons-round icon-select">expand_more</span>
+                                </div>
+                            </div>
+                            <div class="input-container">
+                                <label for="subdivisao2">Subdivisão 2</label>
+                                <div class="select-default">
+                                    <select required name="Subdivisão 2" id="subdivisao2">
+                                        <option value="" selected disabled>Selecionar</option>
+                                        <option value="1">Rio de Janeiro</option>
+                                        <option value="2" selected>Niterói</option>
+                                        <option value="3">Duque de Caxias</option>
+                                        <option value="4">São Gonçalo</option>
+                                        <option value="5">Petrópolis</option>
+                                        <option value="6">Queimados</option>
+                                    </select>
+                                    <span class="material-icons-round icon-select">expand_more</span>
+                                </div>
+                            </div>
+                            <div class="input-container">
+                                <label for="logradouro">Logradouro</label>
+                                <div class="container-row">
+                                    <div class="select-default input-address">
+                                        <select required name="logradouro" id="logradouro">
+                                            <option value="1" selected>AV.</option>
+                                            <option value="2">R.</option>
+                                            <option value="3">TV.</option>
+                                            <option value="4">VL.</option>
+                                            <option value="5">JD.</option>
+                                        </select>
+                                        <span class="material-icons-round icon-select">expand_more</span>
+                                    </div>
+                                    <input type="text" value="Jansen de Melo" name="logradouro" id="endereco"
+                                        class="input-default input-street">
+                                </div>
+                            </div>
+                            <div class="input-container">
+                                <label for="cep">Código Postal</label>
+                                <input type="text" name="código postal" value="12345-122" class="input-default"
+                                    id="cep">
+                            </div>
+                            <div class="input-container">
+                                <label for="locacao">Locação</label>
+                                <div class="select-default">
+                                    <select required name="locação" id="locacao">
+                                        <option value="" selected disabled>Selecionar</option>
+                                        <option value="1" selected>Fixa</option>
+                                        <option value="2">Temporária</option>
+                                    </select>
+                                    <span class="material-icons-round icon-select">expand_more</span>
+                                </div>
+                            </div>
+                            <div class="input-container">
+                                <label for="natureza">Natureza</label>
+                                <div class="select-default">
+                                    <select required name="natureza" id="natureza">
+                                        <option value="" selected disabled>Selecionar</option>
+                                        <option value="1" selected>Pública</option>
+                                        <option value="2">Privada</option>
+                                    </select>
+                                    <span class="material-icons-round icon-select">expand_more</span>
+                                </div>
+                            </div>
+                            <div class="input-container">
+                                <label for="estabelecimento">Tipo de Estabelecimento</label>
+                                <input type="text" name="tipo de estabelecimento" value="Hospital" class="input-default"
+                                    id="estabelecimento">
+                            </div>
+                            <div class="input-container">
+                                <label for="tel">Contato</label>
+                                <div class="container-row-number">
+                                    <input type="text" value="55+" class="input-default input-number-ddi" name="contato"
+                                        id="numddi">
+                                    <input type="text" value="(21)912345678" class="input-default input-number-cel"
+                                        name="contato" id="tel">
+                                </div>
+                            </div>
+
+                        </form>
+                        <!-- CONTAINER INFERIOR BOTOES -->
+                        <div class="box-bottom">
+                            <div class="toggle-container">
+                                <div class="toggle-btn">
+                                    <div class="inner-circle"></div>
+                                    <span class="toggle-name">Ativado</span>
+                                </div>
+                            </div>
+                            <button class="btn-default btn-small d-red">Excluir</button>
+                        </div>
+                    </div>
+
+                    <!-- CONTAINER BOX RIGHT TABLE-->
+                    <div class="box-wrapper">
+                        <!-- CONTAINER CABEÇALHO -->
+                        <header class="box-header">Gestores vinculados
+                            <!-- SELECT HEADER BOX -->
+                            <div class="input-container">
+                                <div class="select-default select-header-box">
+                                    <select required>
+                                        <option value="" selected disabled>Selecionar</option>
+                                        <option value="1" selected>Profissional de saúde</option>
+                                        <option value="2">Supervisor</option>
+                                    </select>
+                                    <span class="material-icons-round icon-select">expand_more</span>
+                                </div>
+                            </div>
+                        </header>
+
+                        <!-- CONTAINER DO MEIO -->
+                        <div class="box-middle box-middle-table scroll-default">
+
+                            <table class="table-default">
+                                <thead>
+                                    <tr>
+                                        <th>Nome</th>
+                                        <th>Identidade</th>
+                                        <th>Código CIVA</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td>Maria Souza da Silva</td>
+                                        <td>123.159.875-05</td>
+                                        <td>BRA5521123456789</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maria Souza da Silva</td>
+                                        <td>123.159.875-05</td>
+                                        <td>BRA5521123456789</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Maria Souza da Silva</td>
+                                        <td>123.159.875-05</td>
+                                        <td>BRA5521123456789</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+
+                        </div>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="container-bottom">
+                <a href="./ui-049.html"><button class="btn-default d-grey" type="button">Voltar</button></a>
+                <button class="btn-default d-coral" id="salvar" form="form-panel-supervisor">Salvar</button>
+            </div>
+
+        </div>
+
+    </div>
+    <script src="./_js/toggle-botton.js"></script>
+    <script src="./_js/ui-050.js"></script>
+    <script src="./_js/check-form-f8.js"></script>
+</body>
+
+</html>

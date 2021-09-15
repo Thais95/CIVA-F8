@@ -1,5 +1,6 @@
 @charset "UTF-8";
 /* RESET ----------------------------------- */
+/* Versão 10-09 */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;0,700;1,300;1,400;1,500;1,600&display=swap");
 * {
   font-family: 'Poppins', sans-serif;
@@ -326,10 +327,17 @@ h4 {
 }
 
 /* INPUT NUMBER CELL PHONE */
+.container-row-number {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+}
+
 .input-number-ddi {
   width: 55px;
   padding-left: 10px;
   padding-right: 10px;
+  margin-right: 5px;
 }
 
 .input-container:not(.input-container[data-error]) .input-default.input-number-ddi:focus {
@@ -707,13 +715,18 @@ a.active-pagination {
   display: flex;
 }
 
-.input-street {
-  width: 125px;
-}
-
 .input-address {
   width: 70px;
   margin-right: 5px;
+}
+
+.input-address-max {
+  width: 90px;
+  margin-right: 5px;
+}
+
+.input-street {
+  width: 125px;
 }
 
 /* SELECT HEADER */

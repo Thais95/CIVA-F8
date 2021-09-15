@@ -132,6 +132,12 @@
                             </div>
 
                             <div class="input-container">
+                                <label for="cod-postal">Código Postal</label>
+                                <input type="number" id="cod-postal" name="cod-postal" value="62755000"
+                                    class="input-default">
+                            </div>
+
+                            <div class="input-container">
                                 <label for="pais-origem">Subdivisão 1</label>
                                 <div class="select-default">
                                     <select name="subdivisao-1" id="subdivisao-1" required>
@@ -161,10 +167,10 @@
                                 </div>
                             </div>
 
-                            <div class="input-container">
+                            <div class="input-container max-width">
                                 <label for="">Logradouro</label>
                                 <div class="container-row">
-                                    <div class="select-default input-address">
+                                    <div class="select-default input-address-max">
                                         <select name="logradouro-tipo" id="logradouro-tipo" required>
                                             <option value="1" selected>AV.</option>
                                             <option value="2">R.</option>
@@ -176,7 +182,7 @@
                                     </div>
                                     <input type="text" name="logradouro-nome" id="logradouro-nome"
                                         placeholder="Jansen de Melo" value="Jansen de Melo"
-                                        class="input-default input-street">
+                                        class="input-default input-street max-width">
                                 </div>
                             </div>
 
@@ -211,7 +217,7 @@
                                     <tr>
                                         <th>Nome</th>
                                         <th>Estado</th>
-                                        <th>CEP</th>
+                                        <th>CP</th>
                                         <th>Identificador</th>
                                     </tr>
                                 </thead>
@@ -261,7 +267,6 @@
                     </div>
 
                 </div>
-
 
             </div>
 
